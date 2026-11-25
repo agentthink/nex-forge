@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Platform.Abstractions/Platform.Abstractions.csproj" />
+    <Project Path="src/Platform.Client/Platform.Client.csproj" />
+    <Project Path="src/Platform.Core/Platform.Core.csproj" />
+    <Project Path="src/Platform.Data/Platform.Data.csproj" />
+    <Project Path="src/Platform.Host/Platform.Host.csproj" />
+  </Folder>
+  <Folder Name="/src/Plugins/">
+    <Project Path="src/Plugins/Driver.ModbusTcp/Driver.ModbusTcp.csproj" />
+    <Project Path="src/Plugins/Driver.Mc3e/Driver.Mc3e.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Platform.Tests/Platform.Tests.csproj" />
+  </Folder>
+  <Folder Name="/tools/">
+    <Project Path="tools/DbInit/DbInit.csproj" />
+    <Project Path="tools/ModbusSlaveSimulator/ModbusSlaveSimulator.csproj" />
+    <Project Path="tools/Mc3eSimulator/Mc3eSimulator.csproj" />
+    <Project Path="tools/PluginHost/PluginHost.csproj" />
+    <Project Path="tools/LoadSimulator/LoadSimulator.csproj" />
+    <Project Path="tools/MesStubServer/MesStubServer.csproj" />
+  </Folder>
+</Solution>

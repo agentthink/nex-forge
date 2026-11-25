@@ -1,0 +1,34 @@
+bin/
+obj/
+.vs/
+*.user
+packages/
+artifacts/
+TestResults/
+*.snk
+appsettings.*.local.json
+# 13.6.5 凭据纪律：签发私钥只在签发方保管，绝不入库；开发 lic 属本地环境产物
+dev-license-private.xml
+*-license-private.xml
+license.lic
+dev-license-public.xml
+publish/
+*.binlog
+# M3-4 离线包构建产物：发布二进制（自包含 ~107MB）按需由 scripts/publish.ps1 重新生成，
+# 不入库；脚本/SQL/SBOM 等文本产物正常跟踪
+deploy/offline/04-platform-releases/
+deploy/offline/05-client/
+deploy/offline/08-tools/DbInit/
+
+# temp/intermediate files (agent workflow: clean after each task)
+*.log
+tmp_*
+*_out.txt
+*.tmp
+commit-msg.txt
+
+# keep dirs
+!tests/.gitkeep
+!scripts/.gitkeep
+# 72h soak live log（run-m1-acceptance 重定向输出，跑完随报告归档后删除）
+_soak.txt

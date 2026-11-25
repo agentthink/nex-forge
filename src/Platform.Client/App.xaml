@@ -1,0 +1,15 @@
+﻿<Application x:Class="Platform.Client.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Platform.Client"
+        ShutdownMode="OnExplicitShutdown"
+        Startup="OnStartup">
+    <Application.Resources>
+        <!-- 统一设计语言入口（docs/ui-prompts §1）：深色工业控制台，全窗口共用一套 Token -->
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/DarkTheme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
